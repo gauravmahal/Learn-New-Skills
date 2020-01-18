@@ -1,0 +1,313 @@
+Message-ID: <1527349290.2085.1574398287599.JavaMail.confluence@jiracnflnprd2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_2084_1581574797.1574398287598"
+
+------=_Part_2084_1581574797.1574398287598
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Links and Educational Material</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Links and Educational Material</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"LinksandEducationalMaterial-Introductory">Introductory</h=
+2>
+<ul>
+<li><a class=3D"external-link" href=3D"http://neuralnetworksanddeeplearning=
+.com/" rel=3D"nofollow">Neural Networks and Deep Learning</a>&nbsp; &nbsp; =
+Great web-book with illustrative examples and explanation of the basic math=
+ behind neural networks, including CNNs</li>
+<li><p><span class=3D"a-size-extra-large a-text-bold" style=3D"letter-spaci=
+ng: 0.0px;">Aur=C3=A9lien G=C3=A9ron. Hands-On Machine Learning with Scikit=
+-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Int=
+elligent Systems&nbsp;</span><span class=3D"a-size-large a-color-secondary =
+a-text-normal" style=3D"color: rgb(85,85,85);">2nd Edition<br>Haven't read =
+it but gets great reviews</span></p></li>
+<li><p>Ian Goodfellow and Yoshua Bengio and Aaron Courville. Deep Learning<=
+br>One of my favorite books on deep learning. A little outdated<br><a class=
+=3D"external-link" href=3D"http://www.deeplearningbook.org/" rel=3D"nofollo=
+w">http://www.deeplearningbook.org/</a><a class=3D"external-link" href=3D"h=
+ttps://github.com/janishar/mit-deep-learning-book-pdf" rel=3D"nofollow">htt=
+ps://github.com/janishar/mit-deep-learning-book-pdf</a></p></li>
+<li>Raul Rojas. Neural Networks=E2=80=94A Systematic Introduction<br>Really=
+ old book. Doesn't cover deep learning. But one of the best explanations of=
+ neural networks I've seen so far<br><a class=3D"external-link" href=3D"htt=
+ps://page.mi.fu-berlin.de/rojas/neural/" rel=3D"nofollow">https://page.mi.f=
+u-berlin.de/rojas/neural/</a></li>
+</ul>
+<h4 id=3D"LinksandEducationalMaterial-Morehighlyratedbooks">More highly rat=
+ed books</h4>
+<ul>
+<li><span style=3D"color: rgb(0,51,102);">Francois Chollet.&nbsp;Deep Learn=
+ing with Python</span></li>
+<li><p><span style=3D"letter-spacing: 0.0px;">Andriy Burkov. The Hundred-pa=
+ge Machine Learning Book</span></p></li>
+<li><p>John D. Kelleher. Deep Learning</p></li>
+<li><p><span style=3D"color: rgb(0,51,102);letter-spacing: 0.0px;">Kevin P.=
+ Murphy.&nbsp;Machine Learning: A Probabilistic Perspective</span></p></li>
+</ul>
+<h2 id=3D"LinksandEducationalMaterial-Specifictopics"><span style=3D"color:=
+ rgb(0,51,102);">Specific topics</span></h2>
+<ul>
+<li><p><span style=3D"color: rgb(0,51,102);">Andrew Barto and Richard S. Su=
+tton.&nbsp;Reinforcement Learning: An Introduction<br></span></p></li>
+<li><p><span style=3D"color: rgb(0,51,102);">David Foster.&nbsp;Generative =
+Deep Learning: Teaching Machines to Paint, Write, Compose, and Play</span><=
+/p></li>
+<li>Hands-On Unsupervised Learning Using Python: How to Build Applied Machi=
+ne Learning Solutions from Unlabeled Data</li>
+</ul>
+<h2 id=3D"LinksandEducationalMaterial-Tutorials">Tutorials</h2>
+<ul>
+<li><a class=3D"external-link" href=3D"https://www.freecodecamp.org/news/le=
+arn-to-develop-neural-networks-using-tensorflow-2-0-in-this-beginners-cours=
+e/" rel=3D"nofollow">https://www.freecodecamp.org/news/learn-to-develop-neu=
+ral-networks-using-tensorflow-2-0-in-this-beginners-course/</a></li>
+<li><a class=3D"external-link" href=3D"https://www.guru99.com/tensorflow-tu=
+torial.html" rel=3D"nofollow">https://www.guru99.com/tensorflow-tutorial.ht=
+ml</a></li>
+<li><a class=3D"external-link" href=3D"https://pythonprogramming.net/tensor=
+flow-introduction-machine-learning-tutorial/" rel=3D"nofollow">https://pyth=
+onprogramming.net/tensorflow-introduction-machine-learning-tutorial/</a></l=
+i>
+<li><a class=3D"external-link" href=3D"https://towardsdatascience.com/tenso=
+rflow-for-absolute-beginners-28c1544fb0d6" rel=3D"nofollow">https://towards=
+datascience.com/tensorflow-for-absolute-beginners-28c1544fb0d6</a></li>
+<li><a class=3D"external-link" href=3D"http://hangtwenty.github.io/dive-int=
+o-machine-learning/" rel=3D"nofollow">http://hangtwenty.github.io/dive-into=
+-machine-learning/</a></li>
+<li><a class=3D"external-link" href=3D"https://www.tensorflow.org/tutorials=
+" rel=3D"nofollow">https://www.tensorflow.org/tutorials</a></li>
+<li><a class=3D"external-link" href=3D"https://www.datacamp.com/community/t=
+utorials/tensorflow-tutorial" rel=3D"nofollow">https://www.datacamp.com/com=
+munity/tutorials/tensorflow-tutorial</a></li>
+</ul>
+<p><br></p>
+<div>
+<p><br></p>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_2084_1581574797.1574398287598--
