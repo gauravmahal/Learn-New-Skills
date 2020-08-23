@@ -1,0 +1,7 @@
+
+docker ps -a
+sudo systemctl status docker
+docker rm & rmi  - for removal
+docker-compose down --rmi all - remove all services
+docker-compose up --build
+
