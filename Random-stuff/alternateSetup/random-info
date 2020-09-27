@@ -1,0 +1,119 @@
+How do I launch the Android emulator from the command line?
+
+I assume that you have built your project and just need to launch it, but you don't have any AVDs created and have to use command line for all the actions. You have to do the following.
+
+Create a new virtual device (AVD) for the platform you need. If you have to use command line for creating your AVD, you can call android create avd -n <name> -t <targetID> where targetID is the API level you need. If you can use GUI, just type in android avd and it will launch the manager, where you can do the same. You can read more about AVD management through GUI and through command line.
+Run the AVD either by using command emulator -avd <name> or through previously launched GUI. Wait until the emulator fully loads, it takes some time. You can read about additional options here.
+Now you have to install the application to your AVD. Usually during development you just use the same Ant script you used to build the project, just select install target. However, you can install the application manually using command adb install <path-to-your-APK>.
+Now switch to emulator and launch your application like on any normal device, through the launcher. Or, as an alternative, you can use the following command: adb shell am start -a android.intent.action.MAIN -n <package>/<activity class>. For example: adb shell am start -a android.intent.action.MAIN -n org.sample.helloworld/org.sample.helloworld.HelloWorld. As a commenter suggested, you can also replace org.sample.helloworld.HelloWorld in the line above with just .HelloWorld, and it will work too.
+
+-- Setting up different java environment 
+    * for finding all java versions 
+        /usr/libexec/java_home -V
+    * for adding java environment to jenv (java environment)
+        jenv add <jdk_path>
+        jenv versions
+        jenv remove oracle64–1.7.0.79
+    * how to use it - 
+        jenv <scope> <jdk-version>
+        eg. - jenv global 1.8.0.121
+        jenv local 11.0.1
+
+// discussion with sushil
+    - <virgoandroid>/components/Syncfile.json 
+    - add the key in ADCComponents after commiting it in feature branch
+    - and them run ant release-x86
+
+// ADCComponent 
+    - origin	git@git.corp.adobe.com:acrobb-core-virgo/ADCComponents.git (fetch)
+    - run debugger cmd+shift+F and then enterToolRoot
+    - ARViewerToolSwitchHandler and put decompiler and debugger in dual mode
+
+// setup of p4 server
+    https://community.perforce.com/s/article/2999
+
+// Splitting a subfolder out into a new repository
+    https://help.github.com/en/github/using-git/splitting-a-subfolder-out-into-a-new-repository
+    git filter-branch --prune-empty --subdirectory-filter FOLDER-NAME  BRANCH-NAME 
+
+// checkout local repo into other local repo
+    ~/repo1 $ git checkout repo1 
+    ~/repo1 $ git remote add repo2 ~/repo2
+    ~/repo1 $ git fetch repo2
+    ~/repo1 $ git merge repo2/foo
+
+// revert change
+    commit 8f937c683929b08379097828c8a04350b9b8e183
+    Merge: 8989ee0 7c6b236
+    Author: Ben James <ben@example.com>
+    Date:   Wed Aug 17 22:49:41 2011 +0100
+    
+    Merge branch 'gh-pages'
+    
+    Conflicts:
+        README
+    In this situation, git revert 8f937c6 -m 1 will get you the tree as it was in 8989ee0, and git revert -m 2 will reinstate the tree as it was in 7c6b236.
+
+    //another way
+    checkout the remote branch to local repo.
+    git checkout development
+    copy the commit hash (i.e. id of the commit immediately before the wrong commit) from git log git log -n5
+    
+    output:
+    
+    commit 7cd42475d6f95f5896b6f02e902efab0b70e8038 "Merge branch 'wrong-commit' into 'development'"
+    commit f9a734f8f44b0b37ccea769b9a2fd774c0f0c012 "this is a wrong commit"
+    commit 3779ab50e72908da92d2cfcd72256d7a09f446ba "this is the correct commit"
+    
+    reset the branch to the commit hash copied in the previous step
+    git reset <commit-hash> (i.e. 3779ab50e72908da92d2cfcd72256d7a09f446ba)
+    
+    run the git status to show all the changes that were part of the wrong commit.
+    simply run git reset --hard to revert all those changes.
+    force-push your local branch to remote and notice that your commit history is clean as it was before it got polluted.
+    git push -f origin development
+
+// fonts
+    https://github.com/powerline/fonts
+
+//
+    ccollab --scm git addchangelist New <commit-id>
+ccollab --scm git addchangelist Review Number <commit-id>
+12:26
+https://reviews.corp.adobe.com/ui#review:id=2056179
+12:29
+Jira Id : DCMAA-29090 …
+Description : change logs so that they are only printed in edit workflow, which are not relevant for FTPDF workflow in CoD
+risk/impact : logs should not come in Cod Workflow
+review : https://reviews.corp.adobe.com/ui#review:id=2050852
+Jira Id : DCMAA-29090
+Description : 
+risk/impact : 
+review : 
+12:30
+git commit --amend -m “New commit message”
+12:30
+git rebase -i HEAD~1
+
+
+// How to add vimdiff to git 
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+
+
+// Useful Command during discussion with Subham
+devBuildX86Debug - for debug build
+sdk path to VirgoAndroid/components/repos/android-devkit/sdk
+./gradlew assembleDevBuildX86Debug from terminal for form apks in build/outputs
+ADB install pathofapk to install it in emulator
+devBuildArmv7Debug - for S10+
+ARHomeActivity or ARViewerActivity - 
+
+// Submodule command
+    cd DbConnector/
+    git submodule init
+    git submodule update or git submodule update --init (--recrsive - for nested submodules)
+    or at time of cloning 
+    - git clone --recurse-submodules http:url
+

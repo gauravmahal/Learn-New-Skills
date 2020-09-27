@@ -1,0 +1,86 @@
+autoload colors
+colors
+#autoload -U compaudit                                          
+#compaudit 
+
+#export PS1="\W$(__git_ps1 "(%s)")"
+
+## export PATH="$HOME/.jenv/bin:$PATH"
+## eval "$(jenv init -)"
+## export JAVA_HOME=$(/usr/libexec/java_home)
+## export ANDROID_HOME=/Users/gmahal/Library/Android/sdk
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export ANDROID_HOME=/Users/gmahal/Git/VirgoAndroid/components/repos/android-devkit/sdk
+export PATH=${PATH}:/usr/local/mysql/bin:/Applications/ccollab_client/:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:/usr/local/bin/gdb
+
+## if [ -f ~/.git-completion.bash ]; then
+##    source ~/.git-prompt.sh
+##    source ~/.git-completion.bash
+## #   export PS1='\W$(__git_ps1 "(%s)") > '
+## #   export PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
+## #   export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
+## #   export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '
+##    export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\[\033[33;1m\] \w\[\033[m\](\$(git branch 2>/dev/null | grep '^*' | colrm 1 2))\$ "
+## fi
+
+# colors!
+darkGreen="\[\033[38;05;34m\]"
+pink="\[\033[38;05;160m\]"
+white="\[\033[38;05;15m\]"
+red="\[\033[38;5;203m\]"
+green="\[\033[38;05;38m\]"
+blue="\[\033[0;34m\]"
+reset="\[\033[0m\]"
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+## export PS1="$darkGreen\u$pink\$(__git_ps1)$white \W
+## $ $reset"
+
+
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+
+setopt hist_ignore_all_dups hist_save_nodups
+
+
+## ##### Auto-launching ssh-agent on Git for Windows 
+## env=~/.ssh/agent.env
+## 
+## agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+## 
+## agent_start () {
+##     (umask 077; ssh-agent >| "$env")
+##     . "$env" >| /dev/null ; }
+## 
+## agent_load_env
+## 
+## # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+## agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+## 
+## if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
+##     agent_start
+##     ssh-add
+## elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
+##     ssh-add
+## fi
+## 
+## unset env
+## ssh-add ~/.ssh/id_rsa
+
+## git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+#autoload -Uz promptinit
+#promptinit
+#prompt skwp
+prompt steeef
+
+source ~/.aliases

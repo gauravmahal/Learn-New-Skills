@@ -5,3 +5,6 @@ docker rm & rmi  - for removal
 docker-compose down --rmi all - remove all services
 docker-compose up --build
 
+git submodule update --init
+Step Five: docker-compose up -d
+Step Six: docker-compose ps
