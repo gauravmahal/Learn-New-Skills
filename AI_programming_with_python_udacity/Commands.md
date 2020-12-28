@@ -1,25 +1,25 @@
 
-## Anaconda
+# Anaconda
 
-# creating environment 
+## creating environment 
 conda create -n env_name
 conda activate env_name
 conda install jupyter notebook python=3.8
 conda deactivate env_num
 conda env remove -n env_name
 
-# Saving and loading environments 
+## Saving and loading environments 
 conda env export > environment.yaml
 
-# To create an environment from an environment file use 
+## To create an environment from an environment file use 
 conda env create -f environment.yaml
 
-## Jupytor 
+# Jupytor Notebook
 
-# Launching
+## Launching
 jupyter notebook
 
-# Installing Notebook Conda to help manage your environments.  
+## Installing Notebook Conda to help manage your environments.  
 conda install nb_conda
 
 ## Test.ipynb for creating a notebook and it's basic in md and html format 
