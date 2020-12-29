@@ -24,3 +24,11 @@ conda install nb_conda
 
 ## Test.ipynb for creating a notebook and it's basic in md and html format 
 
+# NumPy
+
+## numerical python use for high speed computation as it is build over the C/C++ files
+file present in numpy directory for a quick recap
+
+### complete documentation https://numpy.org/doc/stable/contents.html 
+
+

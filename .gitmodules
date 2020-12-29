@@ -1,0 +1,3 @@
+[submodule "AI_programming_with_python_udacity/AIPND-Exercises"]
+	path = AI_programming_with_python_udacity/AIPND-Exercises
+	url = git@github.com:gauravmahal/AIPND-Exercises.git
