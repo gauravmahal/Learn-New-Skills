@@ -14,7 +14,7 @@ conda env export > environment.yaml
 ## To create an environment from an environment file use 
 conda env create -f environment.yaml
 
-# Jupytor Notebook
+# Jupyter Notebook
 
 ## Launching
 jupyter notebook
