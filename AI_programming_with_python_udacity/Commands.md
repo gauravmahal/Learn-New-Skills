@@ -31,4 +31,8 @@ file present in numpy directory for a quick recap
 
 ### complete documentation https://numpy.org/doc/stable/contents.html 
 
+# Pandas
+
+### complete documentation https://pandas.pydata.org/pandas-docs/stable/ 
+
 
