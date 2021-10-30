@@ -1,3 +1,6 @@
 [submodule "AI_programming_with_python_udacity/AIPND-Exercises"]
 	path = AI_programming_with_python_udacity/AIPND-Exercises
 	url = git@github.com:gauravmahal/AIPND-Exercises.git
+[submodule "gorestful"]
+	path = gorestful
+	url = git@github.com:gauravmahal/gorestful.git
