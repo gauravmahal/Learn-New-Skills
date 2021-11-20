@@ -4,3 +4,6 @@
 [submodule "gorestful"]
 	path = gorestful
 	url = git@github.com:gauravmahal/gorestful.git
+[submodule "GolangTraining"]
+	path = GolangTraining
+	url = git@github.com:gauravmahal/GolangTraining.git
